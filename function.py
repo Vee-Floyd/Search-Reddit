@@ -15,8 +15,8 @@ reddit = praw.Reddit(client_id='INPUT CLIENT ID HERE',
 print(reddit.user.me())
 
 #input search query below using a simple keyword or complex boolean search, see boolean capabiliies here: https://www.reddit.com/wiki/search
-#recommend writing query as its own variable for readability ie:query="title:gluten"
-#input how far back you'd like to search. Options are "all","day","hour","month","week","year" with all being the default
+#I recommend writing query as its own variable for readability ie:q="title:gluten"
+#input how far back you'd like to search. Options are "all","day","hour","month","week","year" with "all" being the default
 #input subreddit you'd like to query (default is all of reddit aka "all")
 
 def search_reddit(query,time_parameter="all",subreddit_name="all"):
